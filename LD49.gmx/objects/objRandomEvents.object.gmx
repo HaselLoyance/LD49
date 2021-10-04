@@ -99,7 +99,10 @@ ds_list_add(hithub_suggestions, 'raise Exception("this is not supposed to happen
             <string>event = choose(0,1,1,2,2,3)
 
 if instance_number(objPopUp) &gt; 0
+{
+alarm[0] = irandom_range(600,1000)
     exit
+}
 
 // 0 rate app
 // 1 hithub copilot

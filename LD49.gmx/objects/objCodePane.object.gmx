@@ -532,14 +532,7 @@ draw_set_valign(fa_middle)
     exit;
 }
 
-if chx+ glyph_width * glyph_scale &lt; x + objWorld.shift_x + width
-{
-draw_rectangle(chx,
-chy,
-chx + glyph_width * glyph_scale,
-chy + glyph_height * glyph_scale,
-false)
-}
+
 
 if font == -1
 {
@@ -565,7 +558,7 @@ for (var i = 0; i &lt; code_height; i++)
         continue
         
     // if error line, turn bg red
-    if ds_list_find_index(error_lines, i) != -1 and i != cursor_y
+    if ds_list_find_index(error_lines, i) != -1// and i != cursor_y
     {
           draw_set_color(make_colour_rgb(142,56,63))
           draw_rectangle(
@@ -634,6 +627,16 @@ for (var i = 0; i &lt; code_height; i++)
     tok_counter+=1
     prev_tsc = true
     }
+}
+
+draw_set_color(make_colour_rgb(150,164,181))
+if chx+ glyph_width * glyph_scale &lt; x + objWorld.shift_x + width
+{
+draw_rectangle(chx,
+chy,
+chx + glyph_width * glyph_scale,
+chy + glyph_height * glyph_scale,
+false)
 }
 
 </string>

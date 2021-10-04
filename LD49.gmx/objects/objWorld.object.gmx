@@ -213,7 +213,7 @@ audio_sound_gain(sndMusic, 1, 2000)
             <string>randomize()
 
 use_fullscreen = true
-is_web=false
+is_web=true
 
 
 if !use_fullscreen

@@ -1,0 +1,7 @@
+v1.1:
+- Changing code indentation characters in text messages
+- Adjusting the font range to accomodate the indentation characters
+- Every error code line is now highlighted (including the current selected one)
+- Fixed random event alarm not resetting sometimes
+v1.0:
+- Initial release
